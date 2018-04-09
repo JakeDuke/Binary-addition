@@ -1,41 +1,38 @@
-# [<username>](https://www.codewars.com/users/<username>)'s Solution
+# [Balkoth](https://www.codewars.com/users/Balkoth)'s Solution
 
 ```js
-// copy-paste their solution here
+function addBinary(a,b){
+  return (a+b).toString(2)
+}
 ```
 
 ---
 
 ## Solution Explanation
 
-Explain the solution they used.  Was it heavy in logic or languge features? What strategies did they use?  How is it like and unlike others?
+User used JS native method ".toString" to convert number to string + radix '2' to convert number to binary.
 
 ---
 
 ## Language Features
 
-What language features did they use?
+.toString() method
 
 ---
 
 ## Comparison
 
-How does their solution compare to yours?  How would you make yours more like theirs? What suggestions would you have for them?
+User used native method, it made a solution much easier
 
 ---
 
 ## Notes
 
 What you learned from this solution:
-*
-*
-*
+* toString() method
+* radix
 
-What you still don't understand:
-*
-*
-*
 
 ___
 ___
-### <a href="http://elewa.education/blog" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/34921062-506450ae-f97d-11e7-875f-6feeb26ad72d.png" width="100" height="40"/></a>
+
