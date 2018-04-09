@@ -1,13 +1,14 @@
-# [<challenge name>](https://www.codewars.com/kata/<challenge name>)
+# [Binary addition](https://www.codewars.com/kata/binary-addition)
 
-Explain the challenge as completely & clearly as you can.
+Convert from base 10 to binary:
 
-_function name_: Function
-* Args: (how many args does this function take?)
-  * (List each arg, it's type, and it's purpose)
-* Return: (what type does this function return?)
-  * (Describe the return value)
-* Behavior: (What does this function do?)
+
+binary-addition: Function
+* Args: 2 args
+  * each arg is a number
+* Return: String
+  * Sum of two arguments in binary
+* Behavior: Takes 2 numbers, returns sum as binary string
 
 '''js
 // copy of your polished solution for easy reference.
@@ -29,11 +30,11 @@ _function name_: Function
 
 ## Input Classifications
 
-What characteristics of your inputs are important for your solution?  
+We assume that our function will be passed number.
 
-What groupings will you have to consider when building your solution?  
+We keep in mind if number is negative or starting with 0.  
 
-How did you use this information to select your test cases?
+Take in account what we came up with. 
 
 
 [TOP](#index)
