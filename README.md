@@ -11,7 +11,15 @@ binary-addition: Function
 * Behavior: Takes 2 numbers, returns sum as binary string
 
 '''js
-// copy of your polished solution for easy reference.
+function addBinary(a,b) {
+    var c = a + b;
+    var res = '';
+    while (c >= 1) {
+      var res = c % 2 + res;
+      c = Math.floor(c / 2);
+    }
+    return res;
+  }
 '''
 
 

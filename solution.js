@@ -1,3 +1,3 @@
-// Your code here
-
-// Be sure it's the cleanest code you can write!
+function addBinary(n,m){
+  return Number(n + m).toString(2);
+}
