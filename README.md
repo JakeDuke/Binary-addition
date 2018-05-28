@@ -10,7 +10,8 @@ binary-addition: Function
   * Sum of two arguments in binary
 * Behavior: Takes 2 numbers, returns sum as binary string
 
-'''js
+```
+
 function addBinary(a,b) {
     var c = a + b;
     var res = '';
@@ -20,19 +21,18 @@ function addBinary(a,b) {
     }
     return res;
   }
-'''
+
+```
 
 
 ### Index
 * [Input Classifications](#input-classifications)
 * [Solution Explanation](#solution-explanation)
-* [Constraints](#constraints)
-* [Resource Estimation](#resource-estimation)
-* [Scaffolding](#scaffolding)
 * [Bugs & Challenges](#bugs-challenges) 
 * [Language Features](#language-features)
 * [Use Cases](#use-cases)
 * [Learning Journal](#learning-journal)
+* [Conclusion](#conclusion)
 
 ---
 
@@ -51,45 +51,18 @@ ___
 
 ## Solution Explanation
 
-Explain your solution in detail, however works for you.  Perhaps by using a specific input to illustrate, by describing your strategy, or by including a diagram [directly from Sketchboard.io](https://sketchboard.io/blog/2014/03/06/github-sketchboard.html).
+Our function takes two arguments (a,b). We declare a new variable 'c' which is the sum of our arguments.
+We declare variable 'res' which is gonna be our return value. We use modulus operator '%' to find the remainder and add it to our return value. We use 'c' as the highest power of our number and we divide 'c' by 2 after every step we take.
 
 [TOP](#index)
 
----
-
-## Constraints
-
-What constraints did you place on yourself, and why?  Did they end up being helpful or not?
-
-[TOP](#index)
 
 ___
 
-
-## Resource Estimation
-
-Estimate how what resources you will require, and how much of each.  
-
-
-[TOP](#index)
-
-___
-
-## Scaffolding
-
-Provide a link to Gist you used to construct your solution's scaffolding.  What difficulties did you have making it?  How helpful was it in coming up with your finished solution?
-
-[TOP](#index)
-
-___
 
 ## Challenges & Bugs
 
-What particular challenges & bugs did you come across when you were filling in your scaffolding?
-
-Were they logic bugs? Language bugs? 
-
-Did you have trouble keeping track of which part of the challenge you were solving?
+The biggest challenge was to solve this kata without using built-feature '.toString(2)'
 
 [TOP](#index)
 
@@ -97,18 +70,15 @@ ___
 
 ## Language Features
 
-List the language features used in your solution.
-
-The focus of these exercises are to strengthen you problem solving skills, not to learn the newest ES6 tricks. When you have the choice between to different language features it is better to choose the option that is easiest to read, most common, or most consistent with the rest of your solution.  
-
-Keeping track of the language features you use will enable you separate the problem solving strategy from the implementation.  Being aware of this difference will be an asset later on when you're faced with larger applications and popular frameworks.
+ Built-in language features I used are 'Math.floor' that  returns the largest integer less than or equal to a given number and 'while' loop.
 
 [TOP](#index)
 
 ---
+
 ## Use Cases
 
-List 5+ use cases for your solution.  They can be stand-alone, part of an application, or impractical.  Your use cases can be overly complicated, or very basic. What's important is that you come up with as many and as diverse use cases as possible.
+Binary numbers are often used to operate computers
 
 
 [TOP](#index)
@@ -117,22 +87,27 @@ List 5+ use cases for your solution.  They can be stand-alone, part of an applic
 
 ## Learning Journal
 
-Things I learned studying this problem:
+Things I learned studying this problem: Math.floor
 
 
-New vocabulary:
+New vocabulary: Binary number
 
 
-Things I struggled with:
-
-
-Lessons to apply for next time:
+Things I struggled with: Solving the kata
 
 
 
 [TOP](#index)
 
 ___
+
+## Conclusion
+
+After kata was solved I built a small app based on this kata. In this case I needed my 'solution.js' file and I added handler 'binary-addition-handler.js' file and render 'binary-addition-render.js' file
+to draw DOM elements. All these files were added to index.html. Some Bootstrap was added to make it less
+ugly.
+
+[TOP](#index)
 ___
 
 
